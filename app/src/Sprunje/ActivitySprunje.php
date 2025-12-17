@@ -38,6 +38,19 @@ class ActivitySprunje extends Sprunje
         'description',
     ];
 
+    protected array $columns = [
+        'activities.id',
+        'activities.ip_address',
+        'activities.user_id',
+        'activities.type',
+        'activities.occurred_at',
+        'activities.description',
+        'users.first_name',
+        'users.last_name',
+        'users.email',
+        'users.user_name',
+    ];
+
     public function __construct(
         protected ActivityInterface $activityModel,
     ) {
